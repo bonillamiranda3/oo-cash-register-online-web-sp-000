@@ -24,6 +24,7 @@ end
       @total =(@total*(1-@discount.to.f/100))
       "With discount, the total comes to $#{total.round}"
   end
+end
 
   def void_last_transaction
     @total = @total - @price
