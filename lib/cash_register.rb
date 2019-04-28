@@ -6,7 +6,7 @@ class CashRegister
     @total = 0
     @discount = discount
     @items = []
-    
+
   end
 
   def add_item(item, price, quantity = 0)
@@ -24,7 +24,7 @@ end
       @total =(@total*(1-@discount.to.f/100))
       "With discount, the total comes to $#{total.round}"
   end
-  
+
   def void_last_transaction
     @total = @total - @price
   end
